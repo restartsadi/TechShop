@@ -1,0 +1,33 @@
+.second_row .contact-form {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.col-md-8 .contact-form p {
+  font-size: 16px; /* Adjusted font size for responsiveness */
+  margin-bottom: 15px; /* Adjusted margin for responsiveness */
+  font-weight: 600;
+  text-align: center; /* Center text for responsiveness */
+}
+
+.second_row .contact-form input {
+  width: 70%; /* Adjusted width for responsiveness */
+  padding: 12px; /* Adjusted padding for responsiveness */
+  margin-bottom: 15px; /* Adjusted margin for responsiveness */
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.second_row .contact-form input[type="submit"] {
+  background-color: #72ef76;
+  color: #2600ff;
+  cursor: pointer;
+}
+.second_row .contact-form input[type="submit"]:hover {
+  background-color: blue;
+  color: #fdfdff;
+}

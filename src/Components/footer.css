@@ -1,0 +1,65 @@
+/* .footer {
+  height: 80px;
+  background: #9b9b9b;
+}
+.footer .container p {
+  padding-left: 20px;
+  padding-top: 35px;
+  padding-bottom: 32px;
+} */
+
+/* Common styles for all screen sizes */
+.footer {
+  height: 80px;
+  background: #9b9b9b;
+  margin: 10px;
+}
+
+.footer .container p {
+  padding-left: 20px;
+  padding: 35px;
+  padding-bottom: 32px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 479px) {
+  .footer .container p {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/* Small Tablet and Large Mobile Responsive Styles */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer .container p {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/* Tablet Responsive Styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer .container p {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+}
+
+/* Desktop Responsive Styles */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .footer .container p {
+    text-align: left;
+  }
+}
+
+/* Larger Desktop and High-res Screens Responsive Styles */
+@media screen and (min-width: 1280px) {
+  /* Add specific styles for 1280px and above if needed */
+}

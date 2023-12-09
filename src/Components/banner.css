@@ -1,0 +1,129 @@
+.wrapper .banner {
+  background-image: url(../Assets/img/bg.png);
+  background-size: cover;
+  padding: 0px;
+}
+.wrapper .banner .heading h1 {
+  text-align: center;
+  padding-top: 170px;
+  padding-bottom: 31px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.wrapper .banner .heading p {
+  text-align: center;
+  padding-bottom: 67px;
+}
+.wrapper .banner .circle-down {
+  height: 81px;
+  width: 81px;
+  border-radius: 50%;
+  background-color: rgba(0, 109, 124, 0.63);
+  display: block;
+  margin: auto;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 69px;
+}
+.wrapper .banner .circle-down .inner-circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #000000;
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 6px;
+  padding: 10px;
+}
+.wrapper .banner .circle-down .inner-circle p {
+  margin: 0;
+  padding: 0;
+}
+.wrapper .banner .circle-down .inner-circle .icon {
+  color: rgb(30, 255, 0);
+}
+
+/* Responsive Styles for screens with a minimum width of 1280px */
+@media screen and (min-width: 1280px) {
+  .wrapper .banner .heading h1 {
+    padding-top: 170px;
+    padding-bottom: 31px;
+    font-weight: 900;
+  }
+
+  .wrapper .banner .heading p {
+    padding-bottom: 67px;
+  }
+
+  .wrapper .banner .circle-down {
+    height: 81px;
+    width: 81px;
+    margin-bottom: 69px;
+  }
+
+  .wrapper .banner .circle-down .inner-circle {
+    height: 50px;
+    width: 50px;
+    margin-top: 0px;
+    margin-left: 6px;
+    padding: 10px;
+  }
+  .wrapper .banner .circle-down .inner-circle .icon {
+    color: rgb(30, 255, 0);
+  }
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (min-width: 768px) {
+  .wrapper .banner .heading h1 {
+    padding-top: 100px; /* Adjust as needed for smaller screens */
+    padding-bottom: 20px; /* Adjust as needed for smaller screens */
+    font-weight: 400;
+  }
+
+  .wrapper .banner .heading p {
+    padding-bottom: 40px; /* Adjust as needed for smaller screens */
+  }
+
+  .wrapper .banner .circle-down {
+    height: 60px; /* Adjust as needed for smaller screens */
+    width: 60px; /* Adjust as needed for smaller screens */
+    padding-top: 12px; /* Adjust as needed for smaller screens */
+    margin-bottom: 40px; /* Adjust as needed for smaller screens */
+  }
+
+  .wrapper .banner .circle-down .inner-circle {
+    height: 40px; /* Adjust as needed for smaller screens */
+    width: 40px; /* Adjust as needed for smaller screens */
+    margin: 0px; /* Adjust as needed for smaller screens */
+    padding-top: 5px; /* Adjust as needed for smaller screens */
+  }
+}
+
+/* Responsive Styles for screens with a maximum width of 480px */
+@media screen and (min-width: 480px) {
+  .wrapper .banner .heading h1 {
+    padding-top: 100px;
+    padding-bottom: 15px;
+  }
+
+  .wrapper .banner .heading p {
+    padding-bottom: 40px;
+  }
+
+  .wrapper .banner .circle-down {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 40px;
+  }
+
+  .wrapper .banner .circle-down .inner-circle {
+    height: 40px;
+    width: 40px;
+    margin: 0px;
+    padding-bottom: 5px;
+  }
+}
