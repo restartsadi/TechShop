@@ -61,6 +61,7 @@ const AboutUs = () => {
 
   return (
     <Container>
+      <h1>Data Inserted from Homepage Form Are shows here...</h1><hr/>
       <Table striped bordered hover>
         <thead>
           <tr>
@@ -123,95 +124,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-
-// import { useState, useEffect, useContext } from "react";
-// import { Container, Table, Button } from "react-bootstrap";
-// import UserContext from "../../Context/UserContext";
-
-// const AboutUs = () => {
-//   const { users, addUser, deleteUser } = useContext(UserContext);
-//   const usersData = JSON.parse(localStorage.getItem("users"));
-//   console.log(usersData);
-//   // Load initial state from localStorage or set to default value
-//   const [name, setName] = useState(localStorage.getItem("name") || "");
-//   const [email, setEmail] = useState(localStorage.getItem("email") || "");
-
-//   // Update localStorage whenever name or email changes
-//   useEffect(() => {
-//     localStorage.setItem("name", name);
-//     localStorage.setItem("email", email);
-//   }, [name, email]);
-
-//   // const handleUpdate = (e) => {
-//   //   e.preventDefault();
-
-//   //   // Create a new user object
-//   //   const newUser = {
-//   //     id: Date.now(),
-//   //     name: name,
-//   //     email: email,
-//   //   };
-
-//   //   // Add the new user to the context state
-//   //   addUser(newUser);
-//   // };
-
-//   return (
-//     <Container>
-//       <Table striped bordered hover>
-//         <thead>
-//           <tr>
-//             <th>Name</th>
-//             <th>Email</th>
-//             <th>Action</th>
-//           </tr>
-//         </thead>
-//         <tbody>
-//           {usersData &&
-//             usersData.map((user) => (
-//               <tr key={user.id}>
-//                 <td>{user.name}</td>
-//                 <td>{user.email}</td>
-//                 <td>
-//                   <Button onClick={() => updateUser(user.id)}>Update</Button>
-//                   <Button onClick={() => deleteUser(user.id)}>Delete</Button>
-//                 </td>
-//               </tr>
-//             ))}
-//         </tbody>
-//       </Table>
-
-//       <div className="contact" style={{ textAlign: "center" }}>
-//         <div className="container">
-//           <div className="row second_row">
-//             <div className="col-12 col-md-6 contact-form">
-//               <p>Want to contact us now? Just drop us a line below.</p>
-
-//               <form onSubmit="">
-//                 <input
-//                   type="text"
-//                   placeholder="Enter Your Name"
-//                   name="name"
-//                   //value={name}
-//                   onChange={(e) => setName(e.target.value)}
-//                   //ref={nameRef}
-//                 />
-//                 <input
-//                   type="email"
-//                   placeholder="your@mail.com"
-//                   name="email"
-//                   //value={email}
-//                   onChange={(e) => setEmail(e.target.value)}
-//                   //ref={emailRef}
-//                 />
-//                 <input type="submit" value="Submit" />
-//               </form>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </Container>
-//   );
-// };
-
-// export default AboutUs;

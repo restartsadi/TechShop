@@ -7,6 +7,7 @@ import { Services } from "./Pages/Services/Services";
 import { Products } from "./Pages/Products/Products";
 // import Users from "./Users";
 import { UserProvider } from "./Provider/UserProvider";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/products" element={<Products />} />
         </Routes>
         {/* <Users /> */}
+        <Footer />
       </UserProvider>
     </div>
   );
