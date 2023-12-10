@@ -3,7 +3,7 @@ import { Container, Table, Button } from "react-bootstrap";
 import UserContext from "../../Context/UserContext";
 
 const AboutUs = () => {
-  const { users, addUser, deleteUser, updateUser } = useContext(UserContext);
+  const { addUser, deleteUser, updateUser } = useContext(UserContext);
   const usersData = JSON.parse(localStorage.getItem("users"));
 
   // State for form inputs

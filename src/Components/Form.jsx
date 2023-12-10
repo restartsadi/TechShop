@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const InputUser = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const { users, addUser } = useContext(UserContext);
+  const { addUser } = useContext(UserContext);
   const navigate = useNavigate();
 
   const handleAdd = (e) => {
@@ -90,70 +90,3 @@ const InputUser = () => {
 };
 
 export default InputUser;
-
-// import { useState, useContext, useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
-// import UserContext from "../Context/UserContext";
-
-// import "./form.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
-
-// const InputUser = () => {
-//   const [name, setName] = useState("");
-//   const [email, setEmail] = useState("");
-//   const { users, addUser } = useContext(UserContext);
-//   const navigate = useNavigate();
-
-//   // Load users from localStorage on component mount
-//   useEffect(() => {
-//     const storedUsers = localStorage.getItem("users");
-//     if (storedUsers) {
-//       addUser(JSON.parse(storedUsers));
-//     }
-//   }, [addUser]);
-
-//   const handleAdd = (e) => {
-//     e.preventDefault();
-//     let id = Date.now();
-//     let user = {
-//       id,
-//       name,
-//       email,
-//     };
-//     addUser(user);
-
-//     // Save users to localStorage whenever the users state changes
-//     localStorage.setItem("users", JSON.stringify([...users, user]));
-
-//     // setName("");
-//     // setEmail("");
-//     navigate("/aboutus");
-//   };
-
-//   return (
-//     <>
-//       <div className="contact" style={{ textAlign: "center" }}>
-//         {/* ... (rest of your component code) */}
-//         <form onSubmit={handleAdd}>
-//           <input
-//             type="text"
-//             placeholder="Enter Your Name"
-//             name="name"
-//             value={name}
-//             onChange={(e) => setName(e.target.value)}
-//           />
-//           <input
-//             type="email"
-//             placeholder="your@mail.com"
-//             name="email"
-//             value={email}
-//             onChange={(e) => setEmail(e.target.value)}
-//           />
-//           <input type="submit" value="Submit" />
-//         </form>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default InputUser;
