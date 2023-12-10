@@ -61,7 +61,8 @@ const AboutUs = () => {
 
   return (
     <Container>
-      <h1>Data Inserted from Homepage Form Are shows here...</h1><hr/>
+      <h1>Data Inserted from Homepage Form Are shows here...</h1>
+      <hr />
       <Table striped bordered hover>
         <thead>
           <tr>

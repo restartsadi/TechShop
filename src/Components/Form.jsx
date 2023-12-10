@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useRef, useEffect, useState, useContext } from "react";
+import { useState, useContext } from "react";
 import UserContext from "../Context/UserContext";
 
 import "./form.css";
@@ -10,14 +10,6 @@ const InputUser = () => {
   const { users, addUser } = useContext(UserContext);
   const navigate = useNavigate();
 
-  // Load users from localStorage on component mount
-  // useEffect(() => {
-  //   const storedUsers = localStorage.getItem("users");
-  //   if (storedUsers) {
-  //     addUser(JSON.parse(storedUsers));
-  //   }
-  // }, [addUser]);
-
   const handleAdd = (e) => {
     e.preventDefault();
     const id = Date.now();
@@ -26,15 +18,23 @@ const InputUser = () => {
       name,
       email,
     };
-    const usersData = JSON.parse(localStorage.getItem("users"));
+
+    // Get existing users from localStorage or initialize an empty array
+    const storedUsers = localStorage.getItem("users");
+    const usersData = storedUsers ? JSON.parse(storedUsers) : [];
+
+    // Update localStorage with the new user
     localStorage.setItem("users", JSON.stringify([...usersData, user]));
+
+    // Update the state with the new user
     addUser(user);
+
+    // Clear input fields
     setName("");
     setEmail("");
     console.log(user);
 
-    // Save users to localStorage whenever the users state changes
-
+    // Redirect to "/aboutus"
     navigate("/aboutus");
   };
 
