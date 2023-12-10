@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { Container, Table, Button } from "react-bootstrap";
 import UserContext from "../../Context/UserContext";
+import "./aboutus.css";
 
 const AboutUs = () => {
   const { addUser, deleteUser, updateUser } = useContext(UserContext);
@@ -60,43 +61,49 @@ const AboutUs = () => {
   };
 
   return (
-    <Container>
+    <Container className="table">
       <h1>Data Inserted from Homepage Form Are shows here...</h1>
       <hr />
-      <Table responsive striped bordered hover>
-        <thead>
-          <tr>
-            <th>User ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {usersData &&
-            usersData.map((user) => (
-              <tr key={user.id}>
-                <td>{user.id}</td>
-                <td>{user.name}</td>
-                <td>{user.email}</td>
-                <td>
-                  <Button
-                    style={{ margin: "15px" }}
-                    onClick={() => handleUpdateClick(user)}
-                  >
-                    Update
-                  </Button>
-                  <Button
-                    style={{ margin: "15px" }}
-                    onClick={() => deleteUser(user.id)}
-                  >
-                    Delete
-                  </Button>
-                </td>
-              </tr>
-            ))}
-        </tbody>
-      </Table>
+      <div className="table-responsive">
+        <Table responsive striped bordered hover>
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {usersData &&
+              usersData.map((user) => (
+                <tr key={user.id}>
+                  <td>{user.id}</td>
+                  <td>{user.name}</td>
+                  <td>{user.email}</td>
+                  <td>
+                    <div className="d-flex flex-column align-items-center">
+                      <Button
+                        style={{ margin: "15px" }}
+                        variant="primary"
+                        onClick={() => handleUpdateClick(user)}
+                      >
+                        Update
+                      </Button>
+                      <Button
+                        style={{ margin: "15px" }}
+                        variant="danger"
+                        onClick={() => deleteUser(user.id)}
+                      >
+                        Delete
+                      </Button>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+          </tbody>
+        </Table>
+      </div>
 
       <div className="contact" style={{ textAlign: "center" }}>
         <div className="container">

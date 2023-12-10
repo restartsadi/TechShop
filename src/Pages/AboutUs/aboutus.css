@@ -1,0 +1,11 @@
+/* Default styles for larger screens */
+.table {
+  overflow-x: auto;
+}
+
+/* Media query for screens with a maximum width of 480 pixels */
+@media (max-width: 480px) {
+  .table {
+    overflow-x: scroll;
+  }
+}
