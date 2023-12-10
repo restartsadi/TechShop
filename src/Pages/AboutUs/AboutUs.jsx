@@ -63,7 +63,7 @@ const AboutUs = () => {
     <Container>
       <h1>Data Inserted from Homepage Form Are shows here...</h1>
       <hr />
-      <Table striped bordered hover>
+      <Table responsive striped bordered hover>
         <thead>
           <tr>
             <th>User ID</th>
@@ -81,12 +81,17 @@ const AboutUs = () => {
                 <td>{user.email}</td>
                 <td>
                   <Button
-                    style={{ marginRight: "5px" }}
+                    style={{ margin: "15px" }}
                     onClick={() => handleUpdateClick(user)}
                   >
                     Update
                   </Button>
-                  <Button onClick={() => deleteUser(user.id)}>Delete</Button>
+                  <Button
+                    style={{ margin: "15px" }}
+                    onClick={() => deleteUser(user.id)}
+                  >
+                    Delete
+                  </Button>
                 </td>
               </tr>
             ))}
