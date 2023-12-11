@@ -1,5 +1,7 @@
 .active {
-  background-color: rgb(246, 0, 237);
+  background-color: rgb(4, 247, 255);
+  color: Black;
+  font-weight: 600;
 }
 nav {
   display: flex;
