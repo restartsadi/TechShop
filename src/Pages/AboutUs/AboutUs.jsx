@@ -4,6 +4,7 @@ import UserContext from "../../Context/UserContext";
 import "./aboutus.css";
 
 const AboutUs = () => {
+  const [openForm, setOpenForm] = useState(false);
   const { addUser, deleteUser, updateUser } = useContext(UserContext);
   const usersData = JSON.parse(localStorage.getItem("users"));
 
@@ -48,10 +49,12 @@ const AboutUs = () => {
       setName("");
       setEmail("");
     }
+    setOpenForm(!openForm);
   };
 
   // Function to handle the "Update" button click
   const handleUpdateClick = (user) => {
+    setOpenForm(!openForm);
     // Set the selected user for updating
     setSelectedUserId(user.id);
 
@@ -105,33 +108,35 @@ const AboutUs = () => {
         </Table>
       </div>
 
-      <div className="contact" style={{ textAlign: "center" }}>
-        <div className="container">
-          <div className="row second_row">
-            <div className="col-12 col-md-6 contact-form">
-              <p>Want to contact us now? Just drop us a line below.</p>
+      {openForm && (
+        <div className="contact" style={{ textAlign: "center" }}>
+          <div className="container">
+            <div className="row second_row">
+              <div className="col-12 col-md-6 contact-form">
+                <p>Want to contact us now? Just drop us a line below.</p>
 
-              <form onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  placeholder="Enter Your Name"
-                  name="name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-                <input
-                  type="email"
-                  placeholder="your@mail.com"
-                  name="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <input type="submit" value="Submit" />
-              </form>
+                <form onSubmit={handleSubmit}>
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    name="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                  <input
+                    type="email"
+                    placeholder="your@mail.com"
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <input type="submit" value="Submit" />
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </Container>
   );
 };

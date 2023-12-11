@@ -45,7 +45,7 @@ const InputUser = () => {
           <div className="row first_row">
             <div className="col-md-4"></div>
             <div className="col-md-4 head">
-              <h1>Contact</h1>
+              <h1>Contact Us</h1>
             </div>
           </div>
           <div className="row second_row">

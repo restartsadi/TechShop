@@ -15,7 +15,7 @@ export const Products = () => {
       <div className="container">
         <div className="row first_row">
           <div className="col-md-6 heading">
-            <h1>Our Availability</h1>
+            <h1>Assume developers as Product</h1>
             <p>
               We are a hard working group,aim is to listen to your problems and
               to come up with the best solution possible. We follow the lates
@@ -27,8 +27,8 @@ export const Products = () => {
           <div className="col-md-3">
             <div className="content 1">
               <img src={member1} alt="" />
-              <h4>Name surname</h4>
-              <p>Land developer</p>
+              <h4>Front End </h4>
+              <p>Developer</p>
               <div className="icon">
                 <img src={icon1} alt="" />
                 <img src={icon2} alt="" />
@@ -40,8 +40,8 @@ export const Products = () => {
           <div className="col-md-3">
             <div className="content 2">
               <img src={member2} alt="" />
-              <h4>Name surname</h4>
-              <p>Land developer</p>
+              <h4>API</h4>
+              <p>Developer</p>
               <div className="icon">
                 <img src={icon1} alt="" />
                 <img src={icon2} alt="" />
@@ -53,8 +53,8 @@ export const Products = () => {
           <div className="col-md-3">
             <div className="content 3">
               <img src={member3} alt="" />
-              <h4>Name surname</h4>
-              <p>Land developer</p>
+              <h4>Backend</h4>
+              <p>Developer</p>
               <div className="icon">
                 <img src={icon1} alt="#" />
                 <img src={icon2} alt="#" />
@@ -66,8 +66,8 @@ export const Products = () => {
           <div className="col-md-3">
             <div className="content 4">
               <img src={member4} alt="" />
-              <h4>Name surname</h4>
-              <p>Land developer</p>
+              <h4>MERN</h4>
+              <p>Developer</p>
               <div className="icon">
                 <img src={icon1} alt="#" />
                 <img src={icon2} alt="#" />
