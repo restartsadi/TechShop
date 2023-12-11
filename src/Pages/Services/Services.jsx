@@ -11,7 +11,7 @@ export const Services = () => {
     <>
       <section className="section">
         <div className="section-title">
-          <h1>Our services</h1>
+          <h1>Victory Month`s Offers</h1>
         </div>
         <div className="container">
           <div className="software-solution">
