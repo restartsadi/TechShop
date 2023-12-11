@@ -12,7 +12,7 @@
 .wrapper .featured-work .first_row .heading h1 {
   text-align: center;
   padding-top: 50px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 700;
 }
 

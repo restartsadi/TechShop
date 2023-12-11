@@ -15,7 +15,7 @@ export const Products = () => {
       <div className="container">
         <div className="row first_row">
           <div className="col-md-6 heading">
-            <h1>Assume developers as Product</h1>
+            <h1>Different Tech`s..</h1>
             <p>
               We are a hard working group,aim is to listen to your problems and
               to come up with the best solution possible. We follow the lates

@@ -4,6 +4,7 @@ import UserContext from "../../Context/UserContext";
 import "./aboutus.css";
 
 const AboutUs = () => {
+  const [message, setMessage] = useState("");
   const [openForm, setOpenForm] = useState(false);
   const { addUser, deleteUser, updateUser } = useContext(UserContext);
   const usersData = JSON.parse(localStorage.getItem("users"));
@@ -28,6 +29,14 @@ const AboutUs = () => {
     // Check if there's a selected user for updating
     if (selectedUserId !== null) {
       // Update the user with the new data
+      if (name.length <= 0) {
+        setMessage("Name field required!");
+        return;
+      }
+      if (email.length <= 0) {
+        setMessage("Email field required!");
+        return;
+      }
       updateUser(selectedUserId, { name, email });
 
       // Clear the form inputs and reset the selected user
@@ -113,7 +122,9 @@ const AboutUs = () => {
           <div className="container">
             <div className="row second_row">
               <div className="col-12 col-md-6 contact-form">
-                <p>Want to contact us now? Just drop us a line below.</p>
+                <p className="p">
+                  Want to contact us now? Just drop us a line below.
+                </p>
 
                 <form onSubmit={handleSubmit}>
                   <input
@@ -135,6 +146,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
+          <p className="text-danger my-2">{message}</p>
         </div>
       )}
     </Container>

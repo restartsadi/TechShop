@@ -63,7 +63,7 @@ const InputUser = () => {
           </div>
           <div className="row second_row">
             <div className="col-12 col-md-6 map">
-              <p>Where are we located?</p>
+              <p className="pm">Where are we located?</p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.07301973665!2d90.34971881458003!3d23.7447753845921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf6be3341b5f%3A0xaaf31d01e4d749d0!2z4Kau4KeH4Kaf4KeN4Kaw4KeLIOCmueCmvuCmieCmnOCmv-CmgiDgprLgpr_gpq7gpr_gpp_gp4fgpqE!5e0!3m2!1sbn!2sbd!4v1521014242046"
                 width="308px"
@@ -74,7 +74,9 @@ const InputUser = () => {
               ></iframe>
             </div>
             <div className="col-12 col-md-6 contact-form">
-              <p>Want to contact us now? Just drop us a line below.</p>
+              <p className="p">
+                Want to contact us now? Just drop us a line below.
+              </p>
               <form onSubmit={handleAdd}>
                 <input
                   type="text"

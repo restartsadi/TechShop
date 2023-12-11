@@ -1,15 +1,24 @@
+.second_row .map .pm {
+  font-size: larger;
+  font-weight: 500;
+  color: black;
+}
 .second_row .contact-form {
-  padding-top: 30px;
+  background-image: url(../Assets/img/tiger.jpg);
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-inline: auto;
+  border-radius: 20px;
 }
 
-.col-md-8 .contact-form p {
-  font-size: 16px; /* Adjusted font size for responsiveness */
+.second_row .contact-form .p {
+  font-size: larger;
+  text-decoration: double; /* Adjusted font size for responsiveness */
   margin-bottom: 15px; /* Adjusted margin for responsiveness */
-  font-weight: 600;
+  font-weight: 800;
+  color: #ffffff;
   text-align: center; /* Center text for responsiveness */
 }
 
