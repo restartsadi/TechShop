@@ -4,9 +4,11 @@ import UserContext from "../Context/UserContext";
 
 import "./form.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 const InputUser = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const { addUser } = useContext(UserContext);
   const navigate = useNavigate();
 
@@ -18,7 +20,14 @@ const InputUser = () => {
       name,
       email,
     };
-
+    if (name.length <= 0) {
+      setMessage("Name field required!");
+      return;
+    }
+    if (email.length <= 0) {
+      setMessage("Email field required!");
+      return;
+    }
     // Get existing users from localStorage or initialize an empty array
     const storedUsers = localStorage.getItem("users");
     const usersData = storedUsers ? JSON.parse(storedUsers) : [];
@@ -79,6 +88,7 @@ const InputUser = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   //ref={emailRef}
                 />
+                <p className="text-danger my-2">{message}</p>
                 <input type="submit" value="Submit" />
               </form>
             </div>
