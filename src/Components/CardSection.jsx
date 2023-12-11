@@ -1,5 +1,14 @@
 import "./cardSection.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import pitler from "../Assets/img/pitler.png";
+import touch from "../Assets/img/touch.png";
+import locate from "../Assets/img/locate.png";
+import umbreapp from "../Assets/img/umbreapp.png";
+import hippo from "../Assets/img/hippo.png";
+import pardio from "../Assets/img/pardio.png";
+import banadediki from "../Assets/img/banadediki.png";
+import bizcorner from "../Assets/img/bizcorner.png";
+import arabul from "../Assets/img/arabul.png";
 
 const CardSection = () => {
   return (
@@ -21,51 +30,51 @@ const CardSection = () => {
           <div className="row second_row">
             <div className="col-md-4">
               <a href="#">
-                <img src="src/Assets/img/pitler.png" alt="" />
+                <img src={pitler} alt="" />
               </a>
             </div>
             <div className="col-md-4">
               <a href="#">
-                <img src="src/Assets/img/touch.png" alt="" />
+                <img src={touch} alt="" />
               </a>
             </div>
             <div className="col-md-4">
               <a href="#">
-                <img src="src/Assets/img/locate.png" alt="" />
+                <img src={locate} alt="" />
               </a>
             </div>
           </div>
           <div className="row third_row">
             <div className="col-md-4">
               <a href="#">
-                <img src="src/Assets/img/umbreapp.png" alt="" />
+                <img src={umbreapp} alt="" />
               </a>
             </div>
             <div className="col-md-4">
               <a href="#">
-                <img src="src/Assets/img/hippo.png" alt="" />
+                <img src={hippo} alt="" />
               </a>
             </div>
             <div className="col-md-4">
               <a href="#">
-                <img src="src/Assets/img/pardio.png" alt="" />
+                <img src={pardio} alt="" />
               </a>
             </div>
           </div>
           <div className="row fourth_row">
             <div className="col-md-4">
               <a href="#">
-                <img src="src/Assets/img/banadediki.png" alt="" />
+                <img src={banadediki} alt="" />
               </a>
             </div>
             <div className="col-md-4">
               <a href="#">
-                <img src="src/Assets/img/biz%20corner.png" alt="" />
+                <img src={bizcorner} alt="" />
               </a>
             </div>
             <div className="col-md-4">
               <a href="#">
-                <img src="src/Assets/img/arabul.png" alt="" />
+                <img src={arabul} alt="" />
               </a>
             </div>
           </div>

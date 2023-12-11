@@ -1,5 +1,14 @@
 import "./products.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import member1 from "../../Assets/img/member1.png";
+import member2 from "../../Assets/img/member2.png";
+import member3 from "../../Assets/img/member3.png";
+import member4 from "../../Assets/img/member4.png";
+import icon1 from "../../Assets/img/icon1.png";
+import icon2 from "../../Assets/img/icon2.png";
+import icon3 from "../../Assets/img/icon3.png";
+import icon4 from "../../Assets/img/icon4.png";
+
 export const Products = () => {
   return (
     <div className="Team">
@@ -17,53 +26,53 @@ export const Products = () => {
         <div className="row second_row">
           <div className="col-md-3">
             <div className="content 1">
-              <img src="src/Assets/img/1stmember.png" alt="" />
+              <img src={member1} alt="" />
               <h4>Name surname</h4>
               <p>Land developer</p>
               <div className="icon">
-                <img src="src/Assets/img/icon1.png" alt="" />
-                <img src="src/Assets/img/icon2.png" alt="" />
-                <img src="src/Assets/img/icon3.png" alt="" />
-                <img src="src/Assets/img/icon4.png" alt="" />
+                <img src={icon1} alt="" />
+                <img src={icon2} alt="" />
+                <img src={icon3} alt="" />
+                <img src={icon4} alt="" />
               </div>
             </div>
           </div>
           <div className="col-md-3">
             <div className="content 2">
-              <img src="src/Assets/img/2ndmember.png" alt="" />
+              <img src={member2} alt="" />
               <h4>Name surname</h4>
               <p>Land developer</p>
               <div className="icon">
-                <img src="src/Assets/img/icon1.png" alt="" />
-                <img src="src/Assets/img/icon2.png" alt="" />
-                <img src="src/Assets/img/icon3.png" alt="" />
-                <img src="src/Assets/img/icon4.png" alt="" />
+                <img src={icon1} alt="" />
+                <img src={icon2} alt="" />
+                <img src={icon3} alt="" />
+                <img src={icon4} alt="" />
               </div>
             </div>
           </div>
           <div className="col-md-3">
             <div className="content 3">
-              <img src="src/Assets/img/3rdmember.png" alt="" />
+              <img src={member3} alt="" />
               <h4>Name surname</h4>
               <p>Land developer</p>
               <div className="icon">
-                <img src="src/Assets/img/icon1.png" alt="" />
-                <img src="src/Assets/img/icon2.png" alt="" />
-                <img src="src/Assets/img/icon3.png" alt="" />
-                <img src="src/Assets/img/icon4.png" alt="" />
+                <img src={icon1} alt="#" />
+                <img src={icon2} alt="#" />
+                <img src={icon3} alt="#" />
+                <img src={icon4} alt="#" />
               </div>
             </div>
           </div>
           <div className="col-md-3">
             <div className="content 4">
-              <img src="src/Assets/img/4thmember.png" alt="" />
+              <img src={member4} alt="" />
               <h4>Name surname</h4>
               <p>Land developer</p>
               <div className="icon">
-                <img src="src/Assets/img/icon1.png" alt="" />
-                <img src="src/Assets/img/icon2.png" alt="" />
-                <img src="src/Assets/img/icon3.png" alt="" />
-                <img src="src/Assets/img/icon4.png" alt="" />
+                <img src={icon1} alt="#" />
+                <img src={icon2} alt="#" />
+                <img src={icon3} alt="#" />
+                <img src={icon4} alt="#" />
               </div>
             </div>
           </div>

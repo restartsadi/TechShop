@@ -1,0 +1,151 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Font face */
+@font-face {
+  font-family: Arista;
+  src: url(Fonts/Arista/Arista.ttf);
+}
+
+/* Section title styles */
+.section .section-title h1 {
+  background-image: url(Media/brt.png);
+  text-align: center;
+  font-family: Arista;
+  font-size: 60px;
+  padding: 40px;
+}
+
+/* Container styles */
+.section .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Software solution styles */
+.section .container .software-solution {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  max-width: 400px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Icon wrapper styles */
+.section .container .software-solution .icon-wrapper {
+  height: 80px;
+  width: 80px;
+  margin: auto;
+}
+
+/* Icon styles */
+.section .container .software-solution .icon-wrapper .icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid green;
+  background: white;
+  transition: 1.5s;
+}
+
+/* Hover effect on icon */
+.section .container .software-solution .icon-wrapper .icon:hover {
+  height: 80px;
+  width: 80px;
+  background: green;
+}
+
+/* Icon content styles */
+.section .container .software-solution .icon-wrapper .icon:hover i {
+  line-height: 80px;
+  color: white;
+  font-size: 35px;
+}
+
+.section .container .software-solution .icon-wrapper .icon i {
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
+  transition: 1s;
+}
+
+/* Contents styles */
+.section .container .software-solution .contents {
+  padding: 20px;
+}
+
+.section .container .software-solution .contents:hover {
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.section .container .software-solution .contents h1 {
+  text-shadow: 5px 10px 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: Arista;
+  font-size: 40px;
+}
+
+.section .container .software-solution .contents p {
+  text-align: justify;
+  font-size: 20px;
+  font-family: fantasy;
+  color: black;
+  padding: 5px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .section .container .software-solution {
+    flex-basis: 100%;
+  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  /* Adjust styles for devices up to 1200px wide */
+  .section .container .software-solution .icon-wrapper .icon:hover {
+    height: 70px;
+    width: 70px;
+  }
+
+  .section .container .software-solution .icon-wrapper .icon:hover i {
+    line-height: 70px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* Adjust styles for devices up to 992px wide */
+  .section .container .software-solution .icon-wrapper .icon:hover {
+    height: 60px;
+    width: 60px;
+  }
+
+  .section .container .software-solution .icon-wrapper .icon:hover i {
+    line-height: 60px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for devices up to 768px wide */
+  .section .container .software-solution .icon-wrapper .icon:hover {
+    height: 50px;
+    width: 50px;
+  }
+
+  .section .container .software-solution .icon-wrapper .icon:hover i {
+    line-height: 50px;
+    font-size: 20px;
+  }
+}

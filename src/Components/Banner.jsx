@@ -1,3 +1,4 @@
+import icon from "../Assets/img/icon.png";
 import "./banner.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -11,7 +12,7 @@ const Banner = () => {
             <div className="col-md-6 heading">
               <h1>
                 let us make <br />
-                your lives easier
+                your Technology easier
               </h1>
               <p>
                 We specialize in crafting awesome ideas for web, mobile and
@@ -22,10 +23,7 @@ const Banner = () => {
                   <div className="inner-circle">
                     <div className="icon">
                       <p>
-                        <img
-                          src="src\Assets\img\icon.png"
-                          alt="AAA bbb"
-                        />
+                        <img src={icon} alt="AAA bbb" />
                       </p>
                     </div>
                   </div>
