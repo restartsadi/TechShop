@@ -63,9 +63,9 @@
 .section .container .software-solution .icon-wrapper .icon:hover {
   height: 80px;
   width: 80px;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 0, 0);
 
-  box-shadow: 20px 10px 10px 20px rgb(234, 255, 1);
+  box-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
 /* Icon content styles */
