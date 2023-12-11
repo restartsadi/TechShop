@@ -18,7 +18,7 @@ const CardSection = () => {
           <div className="row first_row">
             <div className="col-md-3"></div>
             <div className="col-md-6 heading">
-              <h1>System`s launched recent`s</h1>
+              <h1>System`s launched</h1>
               <p>
                 Here you can find some of our latest works, to see the details
                 of these works just click the System`s launched recent`s.
