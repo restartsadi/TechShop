@@ -23,15 +23,15 @@
 }
 
 .second_row .contact-form input[type="submit"] {
-  background-color: #00fbe6;
+  background-color: #ffffff;
   color: #000000;
   font-size: medium;
-  font-weight: 300;
+  font-weight: 800;
   cursor: pointer;
 }
 .second_row .contact-form input[type="submit"]:hover {
-  background-color: rgb(0, 255, 60);
+  background-color: rgb(2, 143, 35);
   color: #000000;
   font-size: medium;
-  font-weight: 400;
+  font-weight: 900;
 }

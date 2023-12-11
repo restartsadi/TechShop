@@ -7,9 +7,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const InputUser = () => {
   const [name, setName] = useState("");
+
   const [email, setEmail] = useState("");
+
   const [message, setMessage] = useState("");
+
   const { addUser } = useContext(UserContext);
+
   const navigate = useNavigate();
 
   const handleAdd = (e) => {
